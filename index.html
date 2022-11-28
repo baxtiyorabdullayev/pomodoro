@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pomodoro focus</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="pomodoro">
+        <div class="buttons">
+            <i class="fa fa-home"></i>
+            <i class="fa fa-gear"></i>
+            <button class="pomodoro-button button-bg" id="no-bg">Pomodoro</button>
+            <button class="short-button" id="no-bg">Short Break</button>
+            <button class="long-button" id="no-bg">Long Break</button>
+        </div>
+        <div class="timer-box"><span class="timer"></span><span class="dottes">:</span><span class="timer00"></span></div>
+        <button class="start-button">start</button>
+    </div>
+    <div class="settings">
+        <div class="input-time">
+            <div>
+                <span class="time-name">Pomodo Time</span><br>
+                <input type="number" class="input-time__pomodoro" value=25>
+            </div>
+            <div>
+                <span class="time-name">Short Time</span><br>
+                <input type="number" class="input-time__short" value=5>
+            </div>
+            <div>
+                <span class="time-name">Long Time</span><br>
+                <input type="number" class="input-time__long" value=15>
+            </div>
+            <!-- <button class="change-time__pomodoro">ok</button>
+            <button class="change-time__short">ok</button>
+            <button class="change-time__long">ok</button>   -->
+        </div>
+        <button class="change-time__button">ok</button>
+
+    </div>
+ 
+    
+ 
+
+    <script src="./main.js"></script>
+</body>
+</html>
